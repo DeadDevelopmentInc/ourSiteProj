@@ -1,21 +1,34 @@
 from django.shortcuts import render
 
+from django.http import HttpResponseRedirect
+from django.views.generic.base import View
 from django.views.generic.edit import FormView
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
+from django.contrib.auth import login, logout
+
 
 class RegisterFormView(FormView):
     form_class = UserCreationForm
-
-    # Ссылка, на которую будет перенаправляться пользователь в случае успешной регистрации.
-    # В данном случае указана ссылка на страницу входа для зарегистрированных пользователей.
     success_url = "/login/"
-
-    # Шаблон, который будет использоваться при отображении представления.
     template_name = "register.html"
 
     def form_valid(self, form):
-        # Создаём пользователя, если данные в форму были введены корректно.
         form.save()
-
-        # Вызываем метод базового класса
         return super(RegisterFormView, self).form_valid(form)
+
+
+class LoginFormView(FormView):
+    form_class = AuthenticationForm
+    template_name = "login.html"
+    success_url = "/"
+
+    def form_valid(self, form):
+        self.user = form.get_user()
+        login(self.request, self.user)
+        return super(LoginFormView, self).form_valid(form)
+
+
+class LogoutView(View):
+    def get(self, request):
+        logout(request)
+        return HttpResponseRedirect("/")
