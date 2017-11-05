@@ -3,9 +3,12 @@
 <head>
 <title>Главная страница</title>
 <meta charset="utf-8">
-<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static "css/reset.css" %}" type="text/css" media="all">
+<link rel="stylesheet" href= "{% static "css/layout.css" %}" type="text/css" media="all">
+<link rel="stylesheet" href="{% static "css/style.css"  %}" type="text/css" media="all">
 
 </head>
 <body id="page1">
@@ -53,19 +56,19 @@
 				<article class="col1">
 					<h3>Последние новости</h3>
 					<div class="wrapper">
-						<figure class="left marg_right1"><a href="#"><img src="images/page1_img1.jpg" alt=""></a></figure>
+						<figure class="left marg_right1"><a href="#"><img src="{% static "images/page1_img1.jpg"  %}"  alt=""></a></figure>
 						<p>
 							<strong>Искусственный интеллект </strong><br>проверили на IQ. &nbsp; <a href="#">Узнать больше</a>
 						</p>
 					</div>
 					<div class="wrapper">
-						<figure class="left marg_right1"><a href="#"><img src="images/page1_img2.jpg" alt=""></a></figure>
+						<figure class="left marg_right1"><a href="#"><img src= "{% static "images/page1_img2.jpg"  %}" alt=""></a></figure>
 						<p>
 							<strong>Skype</strong> обрел искусственный интеллект. &nbsp; <a href="#">Узнать больше</a>
 						</p>
 					</div>
 					<div class="wrapper">
-						<figure class="left marg_right1"><a href="#"><img src="images/page1_img3.jpg" alt=""></a></figure>
+						<figure class="left marg_right1"><a href="#"><img src= "{% static "images/page1_img3.jpg"  %}" alt=""></a></figure>
 						<p>
 							<strong>Искусственный интеллект</strong> научили отслеживать эмоции зрителей в кинотеатрах. &nbsp; <a href="#">Узнать больше</a>
 						</p>
@@ -78,7 +81,7 @@
 						Мы следим (нет) за всеми новостями из мира машинного зрения.
 					</p>
 					<div class="wrapper pad_bot1">
-						<figure class="left marg_right1"><img src="images/1.jpg" alt="" style="width: 250px"></figure>
+						<figure class="left marg_right1"><img src="{% static "images/1.jpg"  %}" alt="" style="width: 250px"></figure>
 					</div>
 				</article>
 			</section>

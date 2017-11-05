@@ -3,10 +3,12 @@
 <head>
 <title>Researches</title>
 <meta charset="utf-8">
-<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-<!--[if lt IE 9]>
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static "css/reset.css" %}" type="text/css" media="all">
+<link rel="stylesheet" href= "{% static "css/layout.css" %}" type="text/css" media="all">
+<link rel="stylesheet" href="{% static "css/style.css"  %}" type="text/css" media="all"><!--[if lt IE 9]>
 <script type="text/javascript" src="js/html5.js"></script>
 <![endif]-->
 </head>
@@ -49,19 +51,19 @@
 				<article class="col1">
 					<h3>Последние новости</h3>
 					<div class="wrapper">
-						<figure class="left marg_right1"><a href="#"><img src="images/page1_img1.jpg" alt=""></a></figure>
+						<figure class="left marg_right1"><a href="#"><img src="{% static "images/page1_img1.jpg" %}" alt=""></a></figure>
 						<p>
 							<strong>Искусственный интеллект </strong><br>проверили на IQ. &nbsp; <a href="#">Узнать больше</a>
 						</p>
 					</div>
 					<div class="wrapper">
-						<figure class="left marg_right1"><a href="#"><img src="images/page1_img2.jpg" alt=""></a></figure>
+						<figure class="left marg_right1"><a href="#"><img src="{% static "images/page1_img2.jpg"  %}" alt=""></a></figure>
 						<p>
 							<strong>Skype</strong> обрел искусственный интеллект. &nbsp; <a href="#">Узнать больше</a>
 						</p>
 					</div>
 					<div class="wrapper">
-						<figure class="left marg_right1"><a href="#"><img src="images/page1_img3.jpg" alt=""></a></figure>
+						<figure class="left marg_right1"><a href="#"><img src="{% static "images/page1_img3.jpg" %}" alt=""></a></figure>
 						<p>
 							<strong>Искусственный интеллект</strong> научили отслеживать эмоции зрителей в кинотеатрах. &nbsp; <a href="#">Узнать больше</a>
 						</p>
@@ -70,7 +72,7 @@
 				<article class="col2">
 					<h3>О наших исследованиях</h3>
 					<div class="wrapper">
-						<figure class="left marg_right1"><img src="images/page3_img1.jpg" alt=""></figure>
+						<figure class="left marg_right1"><img src="{% static "images/page3_img1.jpg" %}" alt=""></figure>
 						<p class="pad_bot1">
 							<strong></strong>
 						</p>
