@@ -1,5 +1,11 @@
 from django.shortcuts import render
 
+
+
+def register(request):
+
+    return render(request, 'register.html', locals())
+
 # Create your views here.
 
 def index(request):
@@ -9,10 +15,6 @@ def index(request):
 def contacts(request):
 
 	return render(request, 'contacts.html', locals())
-
-def register(request):
-
-	return render(request, 'register.html', locals())
 
 def press(request):
 
