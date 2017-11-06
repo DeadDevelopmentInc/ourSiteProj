@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-<title>Главная страница</title>
-<meta charset="utf-8">
 
+{% extends 'patternSite.html' %}
 {% load static %}
 
+<head>
+<title>{% block title %}Аутентификация{% endblock %}</title>
+<meta charset="utf-8">
 <link rel="stylesheet" href="{% static "css/reset.css" %}" type="text/css" media="all">
 <link rel="stylesheet" href= "{% static "css/layout.css" %}" type="text/css" media="all">
 <link rel="stylesheet" href="{% static "css/style.css"  %}" type="text/css" media="all">
-<link rel="stylesheet" href="{% static "css/fonts_cnt.css" %}" type="text/css" >
-<link rel="stylesheet" href="{% static "css/common.css" %}" type="text/css" >
 
 </head>
 <body id="page1">
@@ -18,75 +17,46 @@
 	<div class="body2">
 		<div class="main">
 <!-- header -->
-			<header>
-				<div class="wrapper">
-					<h1><a href="index.html" id="logo">Научная лабораория</a></h1>
-					<form id="search" method="post">
-						<div>
-							<input type="submit" class="submit" value="">
-							<input type="text" class="input">
-						</div>
-					</form>
-				</div>
-				<div class="wrapper">
-					<nav>
-						<ul id="menu">
-							<li><a href="index.html">Главная страница</a></li>
-							<li><a href="services.html">Услуги</a></li>
-							<li><a href="researches.html">Исследования</a></li>
-							<li><a href="press.html">Информация</a></li>
-							<li><a href="contacts.html">Контакты</a></li>
-						</ul>
-					</nav>
-				</div>
-			</header>
+
 <!-- / header -->
 <!-- content -->
-<h1></h1>
+{% block content %}
+			<form name="login" method="post">
+				<h1>
+					wertyuiuytre
+				</h1>
+				<table border="2">
+					<td>
+						<tr>
+							<input type="text" name="email"placeholder="Phone or email" onkeyup="toggle('index_expire', !!this.value); toggle('index_forgot', !this.value)">
+						</tr>
+						<tr>
+							<input type="password" name="pass" placeholder="Password" onkeyup="toggle('index_expire', !!this.value); toggle('index_forgot', !this.value)">
+						</tr>
+					</td>
+				</table>
+			</form>
 
-<form>
-
-  <!--<div id="index_login" class="page_block index_login">
-      <input type="text" class="big_text" name="email" id="index_email" value="" placeholder="Phone or email">
-      <input type="password" class="big_text" name="pass" id="index_pass" value="" placeholder="Password" onkeyup="toggle('index_expire', !!this.value);toggle('index_forgot', !this.value)">
-  </div>
-
-  <div id="index_register" class="page_block index_register">
-      <h2 class="ij_header">For the first time on VK?</h2>
-      <div class="ij_subheader">Sign up for VK</div>
-      <input type="text" class="big_text" id="ij_first_name" value="" placeholder="Your first name">
-      <input type="text" class="big_text" id="ij_first_name" value="" placeholder="Your first name">
-      <button></button>
-  </div>
+<!--
+  		<div id="index_register" class="page_block index_register">
+      	<h2 class="ij_header">For the first time on Science Lab?</h2>
+      	<div class="ij_subheader">Sign up for Science Lab</div>
+      	<input type="text" class="big_text" id="ij_first_name" value="" placeholder="Your first name">
+      	<input type="text" class="big_text" id="ij_first_name" value="" placeholder="Your first name">
+      	<button></button>
+  		</div>
 -->
-<h2>Регистрация</h2>
-   <form action="" method="post">
-       {{ form.as_p }}
-       <input type="submit" value="Отправить" />
-       {% csrf_token %}
-   </form>
-</form>
-
-<br/>
+		<br/>
 
 <!-- Horizontal Line -->
-<hr/>
+	<hr/>
 
-<br/>
+	<br/>
+{% endblock content %}
+
 <!-- /content -->
 <!-- footer -->
-		<footer>
-			<nav>
-				<ul id="footer_menu">
-					<li><a href="index.html">Гл. стр.</a></li>
-					<li><a href="services.html">Услуги</a></li>
-					<li><a href="researches.html">Исследования</a></li>
-					<li><a href="press.html">Инфо</a></li>
-					<li><a href="contacts.html">Контакты</a></li>
-				</ul>
-			</nav>
 
-		</footer>
 <!-- / footer -->
 	</div>
 </div>

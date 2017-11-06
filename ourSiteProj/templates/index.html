@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-<title>Главная страница</title>
-<meta charset="utf-8">
 
+{% extends 'patternSite.html' %}
 {% load static %}
+
+<head>
+<title>{% block title %}Главная страница{% endblock %}</title>
+<meta charset="utf-8">
 
 <link rel="stylesheet" href="{% static "css/reset.css" %}" type="text/css" media="all">
 <link rel="stylesheet" href= "{% static "css/layout.css" %}" type="text/css" media="all">
@@ -16,28 +18,7 @@
 	<div class="body2">
 		<div class="main">
 <!-- header -->
-			<header>
-				<div class="wrapper">
-					<button style="vertical-align: middle" onclick='location.href="register.html"'>Register/Login</button>
-					<h1><a href="index.html" id="logo">Научная лабораория</a></h1>
-					<form id="search" method="post">
-						<div>
-							<input type="submit" class="submit" value="">
-							<input type="text" class="input">
-						</div>
-					</form>
-				</div>
-				<div class="wrapper">
-					<nav>
-						<ul id="menu">
-							<li><a href="index.html">Главная страница</a></li>
-							<li><a href="services.html">Услуги</a></li>
-							<li><a href="researches.html">Исследования</a></li>
-							<li><a href="press.html">Информация</a></li>
-							<li><a href="contacts.html">Контакты</a></li>
-						</ul>
-					</nav>
-				</div>
+				{% block header %}
 				<div class="wrapper">
 					<div class="col">
 						<h2>Лаборатория IT технологий<span>Профессиональные исследования</span></h2>
@@ -50,9 +31,10 @@
 						<a href="#" class="button"><span>Перейти на страницу Wiki</span></a>
 					</div>
 				</div>
-			</header>
+				{% endblock %}
 <!-- / header -->
 <!-- content -->
+		{% block content %}
 			<section id="content">
 				<article class="col1">
 					<h3>Последние новости</h3>
@@ -144,21 +126,8 @@
 				</div>
 			</article>
 		</section>
+  {% endblock content %}
 <!-- / content -->
-<!-- footer -->
-		<footer>
-			<nav>
-				<ul id="footer_menu">
-					<li><a href="index.html">Гл. стр.</a></li>
-					<li><a href="services.html">Услуги</a></li>
-					<li><a href="researches.html">Исследования</a></li>
-					<li><a href="press.html">Инфо</a></li>
-					<li><a href="contacts.html">Контакты</a></li>
-				</ul>
-			</nav>
-
-		</footer>
-<!-- / footer -->
 	</div>
 </div>
 </body>

@@ -20,7 +20,4 @@ from users import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 	url(r'^', include('landing.urls')),
-    url(r'^register/$', views.RegisterFormView.as_view()),
-    url(r'^login/$', views.LoginFormView.as_view()),
-    url(r'^logout/$', views.LogoutView.as_view()),
 ]
