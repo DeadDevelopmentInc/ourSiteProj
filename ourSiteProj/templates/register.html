@@ -1,51 +1,45 @@
-<!DOCTYPE html>
-<html lang="ru">
-
 {% extends 'patternSite.html' %}
 {% load static %}
 
-<head>
 <title>{% block title %}Аутентификация{% endblock %}</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{% static "css/reset.css" %}" type="text/css" media="all">
-<link rel="stylesheet" href= "{% static "css/layout.css" %}" type="text/css" media="all">
-<link rel="stylesheet" href="{% static "css/style.css"  %}" type="text/css" media="all">
 
-</head>
-<body id="page1">
-<div class="body1">
-	<div class="body2">
-		<div class="main">
-<!-- header -->
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static "css/reg.css" %}" />
+{% endblock css %}
 
-<!-- / header -->
-<!-- content -->
 {% block content %}
-			<form name="login" method="post">
-				<h1>
-					wertyuiuytre
-				</h1>
-				<table border="2">
-					<td>
-						<tr>
-							<input type="text" name="email"placeholder="Phone or email" onkeyup="toggle('index_expire', !!this.value); toggle('index_forgot', !this.value)">
-						</tr>
-						<tr>
-							<input type="password" name="pass" placeholder="Password" onkeyup="toggle('index_expire', !!this.value); toggle('index_forgot', !this.value)">
-						</tr>
-					</td>
-				</table>
-			</form>
+<div id="reg_form">
+			<form>
+		<p>Имя<input type="text" id="fname" name="fname" pattern="^[А-Яа-яЁёA-Za-z]+$" required><span></span></p>
+		<p>Фамилия<input type="text" id="sname" name="sname" pattern="^[А-Яа-яЁёA-Za-z]+$" required><span></span></p>
+		<p>Отчество<input type="text" id="thname" name="thname" pattern="^[А-Яа-яЁёA-Za-z]+$" required><span></span></p>
+		<p>Ваш пол (М/Ж)<input type="text" id="sex" name="sex" pattern="^[МмЖж]+$" required><span></span></p>
+		<p>Возраст<input type="text" id="age" name="age" pattern="^[0-9]+$" required><span></span></p>
+					<p><span class="inputHeader">Факультет</span><span class="inputMark" id="facultyM"></span><br></p>
+					<p><input type="Radio" name="Faculty" value="ГЭФ" onChange="changeCath();" checked=true>ГЭФ<br></p>
+					<p><input type="Radio" name="Faculty" value="МСФ" onChange="changeCath();">МСФ<br></p>
+					<p><input type="Radio" name="Faculty" value="ФАИС" onChange="changeCath();">ФАИС<br></p>
+					<p><input type="Radio" name="Faculty" value="ЭФ" onChange="changeCath();">ЭФ<br></p>
+					<p><input type="Radio" name="Faculty" value="МТФ" onChange="changeCath();">МТФ<br><br></p>
+					<p><span class="inputHeader">Кафедра</span><span class="inputMark" id="cathM"></span><br></p>
+					<p><select id="Cath">
+							<option value="УА">УА</option>
+							<option value="УП">УП</option>
+							<option value="У">У</option>
+							<option value="ОП">ОП</option>
+							<option value="МГ">МГ</option>
+							<option value="МТ">МТ</option>
+					</select></p>
+		<p>Город<input type="text" id="city" name="city" pattern="^[a-zA-ZА-Яа-яЁё-]+$" required><span></span></p>
+		<p>Email<input type="email" id="email" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required><span></span></p>
+		<p>Логин<input type="text" id="login" name="login" pattern="^[a-zA-Z0-9_]{3,20}$" required><span></span></p>
+		<p>Пароль<input type="password" id="fpass" name="fpass" required></p>
+		<p>Повторите пароль<input type="password" id="spass" name="spass" required></p>
+	<input type="button" value="Регистрация" name="submit" onclick="if(check()){HideBlock('reg_form'); HideBlock('test');} "/><br><br>
+	<input type="reset" value="Очистить поля" name="reset"/>
+</form>
+			</div>
 
-<!--
-  		<div id="index_register" class="page_block index_register">
-      	<h2 class="ij_header">For the first time on Science Lab?</h2>
-      	<div class="ij_subheader">Sign up for Science Lab</div>
-      	<input type="text" class="big_text" id="ij_first_name" value="" placeholder="Your first name">
-      	<input type="text" class="big_text" id="ij_first_name" value="" placeholder="Your first name">
-      	<button></button>
-  		</div>
--->
 		<br/>
 
 <!-- Horizontal Line -->
@@ -53,12 +47,3 @@
 
 	<br/>
 {% endblock content %}
-
-<!-- /content -->
-<!-- footer -->
-
-<!-- / footer -->
-	</div>
-</div>
-</body>
-</html>

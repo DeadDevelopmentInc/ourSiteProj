@@ -1,138 +1,110 @@
-<!DOCTYPE html>
-<html lang="ru">
-
 {% extends 'patternSite.html' %}
 {% load static %}
 
-<head>
 <title>{% block title %}Contacts{% endblock %}</title>
-<meta charset="utf-8">
 
 
-<link rel="stylesheet" href="{% static "css/reset.css" %}" type="text/css" media="all">
-<link rel="stylesheet" href= "{% static "css/layout.css" %}" type="text/css" media="all">
-<link rel="stylesheet" href="{% static "css/style.css"  %}" type="text/css" media="all">
-<!--[if lt IE 9]>
-<script type="text/javascript" src="js/html5.js"></script>
-<![endif]-->
-</head>
-<body id="page5">
-<div class="body1">
-	<div class="body2">
-		<div class="main">
-<!-- header -->
-
-<!-- / header -->
-<!-- content -->
-		{% block content %}
-			<section id="content">
-				<article class="col1">
-					<h3>Обратная связь</h3>
-					<div class="wrapper pad_bot1">
-						<div class="cols pad_bot1">
-							<strong>
-								Страна: <br> <br>
-								Город: <br>
-								Телефон: <br>
-								Email:
-							</strong>
-						</div>
-						Марсианская незавимая республика<br>
-						Бриган<br>
-						+0000 5635600<br>
-						<a href="mailto:">crazydogmaxix@gmail.com</a>
+{% block content %}
+	<section id="content">
+		<article class="col1">
+			<h3>Обратная связь</h3>
+				<div class="wrapper pad_bot1">
+					<div class="cols pad_bot1">
+						<strong>
+							Страна: <br> <br>
+							Город: <br>
+							Телефон: <br>
+							Email:
+						</strong>
 					</div>
-					<h3>Разное</h3>
-					<p>
-					Берегите себя и своих близких... <br>
-					Внесите вклад в генофонд человечества.
-					</p>
-				</article>
-				<article class="col2">
-					<h3>Форма обратной связи</h3>
-					<form id="ContactForm">
-						<div>
-							<div class="wrapper">
-								<span>ФИО:</span><input type="text" class="input" >
-							</div>
-							<div class="wrapper">
-								<span>Email:</span><input type="text" class="input" >
-							</div>
-							<div class="textarea_box">
-								<span>Сообщение:</span><textarea name="textarea" cols="1" rows="1"></textarea>
-							</div>
-							<a href="#" class="button" onClick="document.getElementById('ContactForm').submit()">Отправить</a>
-							<a href="#" class="button" onClick="document.getElementById('ContactForm').reset()">Отчистить</a>
-						</div>
-					</form>
-				</article>
-			</section>
-		</div>
-	</div>
-</div>
-<div class="body3">
-	<div class="main">
-		<section id="content2">
-			<article class="col3">
-				<h4><span><span class="right"></span>Лаб-ное оборудование</span></h4>
-				<div class="wrapper">
-					<div class="pad">
-						<p class="pad_bot3">
-							<strong>
-							Оборудование нашей лаборатории представлено не самыми ровными руками и не самыми извилистыми мозгами.
-							</strong>
-						</p>
-						<p class="pad_bot3">
-						Приносим извинения за все причененные неудобства и неприятности из-за нас.
-						Увы но это уже ваши проблеммы.
-						</p>
-						<p>
-						Даже без различного оборудования понятно, что вы ошиблись сайтом.
-						</p>
-					</div>
+					Марсианская незавимая республика<br>
+					Бриган<br>
+					+0000 5635600<br>
+					<a href="mailto:">crazydogmaxix@gmail.com</a>
 				</div>
+				<h3>Разное</h3>
+				<p>
+				Берегите себя и своих близких... <br>
+				Внесите вклад в генофонд человечества.
+				</p>
 			</article>
-			<article class="col4">
-				<h4><span><span class="right"></span>Наши исследования</span></h4>
-				<div class="wrapper">
-					<div class="pad">
-						<ul class="list2">
-							<li><a href="#">Исследование 1</a></li>
-							<li><a href="#">Исследование 2</a></li>
-							<li><a href="#">Исследование 3</a></li>
-							<li><a href="#">Исследование 4</a></li>
-							<li><a href="#">Исследование 5</a></li>
-							<li><a href="#">Исследование 6</a></li>
-							<li><a href="#">Исследование 7</a></li>
-							<li><a href="#">Исследование 8</a></li>
-						</ul>
+			<article class="col2">
+				<h3>Форма обратной связи</h3>
+				<form id="ContactForm">
+					<div>
+						<div class="wrapper">
+							<span>ФИО:</span><input type="text" class="input" >
+						</div>
+						<div class="wrapper">
+							<span>Email:</span><input type="text" class="input" >
+						</div>
+						<div class="textarea_box">
+							<span>Сообщение:</span><textarea name="textarea" cols="1" rows="1"></textarea>
+						</div>
+						<a href="#" class="button" onClick="document.getElementById('ContactForm').submit()">Отправить</a>
+						<a href="#" class="button" onClick="document.getElementById('ContactForm').reset()">Отчистить</a>
 					</div>
-				</div>
-			</article>
-			<article class="col4">
-				<h4><span><span class="right"></span>Комплексная наука</span></h4>
-				<div class="wrapper">
-					<div class="pad">
-						<p class="pad_bot3">
-						Когда синтез показаний смежных наук захватывает их во множестве, то ему достается именование комплексности.
-						</p>
-						<p class="pad_bot3">
-						 В этом случае инициативной науки, стремящейся к обогащению нет, дополнительную науку дает объединение разобщенных, но связанных друг с другом сведений.
-						 Так случилось с «конфликтологией», «науковедением», «диаспорологией». В том же ряду «биология», «экология».
-						</p>
-						<p>
-							За подробностями <a href="http://sci-article.ru/stat.php?i=1423219908">сюда</a>.
-						</p>
-					</div>
-				</div>
+				</form>
 			</article>
 		</section>
-	{% endblock content %}
-<!-- / content -->
-<!-- footer -->
-
-<!-- / footer -->
 	</div>
 </div>
-</body>
-</html>
+</div>
+<div class="body3">
+<div class="main">
+	<section id="content2">
+		<article class="col3">
+			<h4><span><span class="right"></span>Лаб-ное оборудование</span></h4>
+			<div class="wrapper">
+				<div class="pad">
+					<p class="pad_bot3">
+						<strong>
+						Оборудование нашей лаборатории представлено не самыми ровными руками и не самыми извилистыми мозгами.
+						</strong>
+					</p>
+					<p class="pad_bot3">
+					Приносим извинения за все причененные неудобства и неприятности из-за нас.
+					Увы но это уже ваши проблеммы.
+					</p>
+					<p>
+					Даже без различного оборудования понятно, что вы ошиблись сайтом.
+					</p>
+				</div>
+			</div>
+		</article>
+		<article class="col4">
+			<h4><span><span class="right"></span>Наши исследования</span></h4>
+			<div class="wrapper">
+				<div class="pad">
+					<ul class="list2">
+						<li><a href="#">Исследование 1</a></li>
+						<li><a href="#">Исследование 2</a></li>
+						<li><a href="#">Исследование 3</a></li>
+						<li><a href="#">Исследование 4</a></li>
+						<li><a href="#">Исследование 5</a></li>
+						<li><a href="#">Исследование 6</a></li>
+						<li><a href="#">Исследование 7</a></li>
+						<li><a href="#">Исследование 8</a></li>
+					</ul>
+				</div>
+			</div>
+		</article>
+		<article class="col4">
+			<h4><span><span class="right"></span>Комплексная наука</span></h4>
+			<div class="wrapper">
+				<div class="pad">
+					<p class="pad_bot3">
+					Когда синтез показаний смежных наук захватывает их во множестве, то ему достается именование комплексности.
+					</p>
+					<p class="pad_bot3">
+					 В этом случае инициативной науки, стремящейся к обогащению нет, дополнительную науку дает объединение разобщенных, но связанных друг с другом сведений.
+					 Так случилось с «конфликтологией», «науковедением», «диаспорологией». В том же ряду «биология», «экология».
+					</p>
+					<p>
+						За подробностями <a href="http://sci-article.ru/stat.php?i=1423219908">сюда</a>.
+					</p>
+				</div>
+			</div>
+		</article>
+	</section>
+{% endblock content %}

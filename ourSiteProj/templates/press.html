@@ -1,157 +1,113 @@
-<!DOCTYPE html>
-<html lang="ru">
-
 {% extends 'patternSite.html' %}
 {% load static %}
 
-<head>
 <title>{% block title %}Издания{% endblock %}</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{% static "css/reset.css" %}" type="text/css" media="all">
-<link rel="stylesheet" href= "{% static "css/layout.css" %}" type="text/css" media="all">
-<link rel="stylesheet" href="{% static "css/style.css"  %}" type="text/css" media="all">
-<!--[if lt IE 9]>
-<script type="text/javascript" src="js/html5.js"></script>
-<![endif]-->
-</head>
 
-<body id="page4">
-<div class="body1">
-	<div class="body2">
-		<div class="main">
-<!-- header -->
-
-<!-- / header -->
-<!-- content -->
 {% block content %}
-			<section id="content">
-				<article class="col1">
-					<h3>Наши услуги</h3>
-					<ul class="list2">
-						<li><a href="#">Услуга 1</a></li>
-						<li><a href="#">Услуга 2</a></li>
-						<li><a href="#">Услуга 3</a></li>
-						<li><a href="#">Услуга 4 </a></li>
-						<li><a href="#">Услуга 5</a></li>
-						<li><a href="#">Услуга 6</a></li>
-						<li><a href="#">Услуга 7</a></li>
-						<li><a href="#">Услуга 8</a></li>
-						<li><a href="#">Услуга 9</a></li>
-						<li><a href="#">Услуга 10</a></li>
-					</ul>
-				</article>
-				<article class="col2">
-					<h3>Наши издания</h3>
-					<div class="wrapper">
-						<figure class="left marg_right1"><img src="{% static "images/page4_img1.jpg" %}" alt=""></figure>
-						<p class="pad_bot3 color1">
-							<strong></strong>
-						</p>
-						<p class="pad_bot3">
-
-						</p>
-						<p><a href="#">Узнать больше</a></p>
-					</div>
-					<div class="wrapper">
-						<figure class="left marg_right1"><img src="{% static "images/page4_img2.jpg" %}" alt=""></figure>
-						<p class="pad_bot3 color1">
-							<strong></strong>
-						</p>
-						<p class="pad_bot3">
-
-						</p>
-						<p><a href="#">Узнать больше</a></p>
-					</div>
-					<div class="wrapper">
-						<figure class="left marg_right1"><img src="{% static "images/page4_img3.jpg" %}" alt=""></figure>
-						<p class="pad_bot3 color1">
-							<strong></strong>
-						</p>
-						<p class="pad_bot3">
-
-						</p>
-						<p><a href="#">Узнать больше</a></p>
-					</div>
-					<div class="wrapper">
-						<figure class="left marg_right1"><img src="{% static "images/page4_img4.jpg" %}" alt=""></figure>
-						<p class="pad_bot3 color1">
-							<strong></strong>
-						</p>
-						<p class="pad_bot3">
-
-						</p>
-						<p><a href="#">Узнать больше</a></p>
-					</div>
-				</article>
-			</section>
-		</div>
-	</div>
+	<section id="content">
+		<article class="col1">
+			<h3>Наши услуги</h3>
+			<ul class="list2">
+				<li><a href="#">Услуга 1</a></li>
+				<li><a href="#">Услуга 2</a></li>
+				<li><a href="#">Услуга 3</a></li>
+				<li><a href="#">Услуга 4 </a></li>
+				<li><a href="#">Услуга 5</a></li>
+				<li><a href="#">Услуга 6</a></li>
+				<li><a href="#">Услуга 7</a></li>
+				<li><a href="#">Услуга 8</a></li>
+				<li><a href="#">Услуга 9</a></li>
+				<li><a href="#">Услуга 10</a></li>
+			</ul>
+		</article>
+		<article class="col2">
+			<h3>Наши издания</h3>
+			<div class="wrapper">
+				<figure class="left marg_right1"><img src="{% static "images/page4_img1.jpg" %}" alt=""></figure>
+				<p class="pad_bot3 color1"><strong></strong></p>
+				<p class="pad_bot3"></p>
+				<p><a href="#">Узнать больше</a></p>
+			</div>
+			<div class="wrapper">
+				<figure class="left marg_right1"><img src="{% static "images/page4_img2.jpg" %}" alt=""></figure>
+				<p class="pad_bot3 color1"><strong></strong></p>
+				<p class="pad_bot3"></p>
+				<p><a href="#">Узнать больше</a></p>
+			</div>
+			<div class="wrapper">
+				<figure class="left marg_right1"><img src="{% static "images/page4_img3.jpg" %}" alt=""></figure>
+				<p class="pad_bot3 color1"><strong></strong></p>
+				<p class="pad_bot3"></p>
+				<p><a href="#">Узнать больше</a></p>
+			</div>
+			<div class="wrapper">
+				<figure class="left marg_right1"><img src="{% static "images/page4_img4.jpg" %}" alt=""></figure>
+				<p class="pad_bot3 color1"><strong></strong></p>
+				<p class="pad_bot3"></p>
+				<p><a href="#">Узнать больше</a></p>
+			</div>
+		</article>
+	</section>
+</div>
+</div>
 </div>
 <div class="body3">
-	<div class="main">
-		<section id="content2">
-			<article class="col3">
-				<h4><span><span class="right"></span>Лаб-ное оборудование</span></h4>
-				<div class="wrapper">
+<div class="main">
+	<section id="content2">
+		<article class="col3">
+			<h4><span><span class="right"></span>Лаб-ное оборудование</span></h4>
+			<div class="wrapper">
+				<div class="pad">
 					<div class="pad">
-						<div class="pad">
-						<p class="pad_bot3">
-							<strong>
+					<p class="pad_bot3">
+						<strong>
 							Оборудование нашей лаборатории представлено не самыми ровными руками и не самыми извилистыми мозгами.
-							</strong>
-						</p>
-						<p class="pad_bot3">
+						</strong>
+					</p>
+					<p class="pad_bot3">
 						Приносим извинения за все причененные неудобства и неприятности из-за нас.
 						Увы но это уже ваши проблеммы.
-						</p>
-						<p>
+					</p>
+					<p>
 						Даже без различного оборудования понятно, что вы ошиблись сайтом.
-						</p>
-					</div>
-					</div>
+					</p>
 				</div>
-			</article>
-			<article class="col4">
-				<h4><span><span class="right"></span>Наши исследования</span></h4>
-				<div class="wrapper">
-					<div class="pad">
-						<ul class="list2">
-							<li><a href="#">Исследование 1</a></li>
-							<li><a href="#">Исследование 2</a></li>
-							<li><a href="#">Исследование 3</a></li>
-							<li><a href="#">Исследование 4</a></li>
-							<li><a href="#">Исследование 5</a></li>
-							<li><a href="#">Исследование 6</a></li>
-							<li><a href="#">Исследование 7</a></li>
-							<li><a href="#">Исследование 8</a></li>
-						</ul>
-					</div>
 				</div>
-			</article>
-			<article class="col4">
-				<h4><span><span class="right"></span>Комплексная наука</span></h4>
-				<div class="wrapper">
-					<div class="pad">
-						<p class="pad_bot3">
+			</div>
+		</article>
+		<article class="col4">
+			<h4><span><span class="right"></span>Наши исследования</span></h4>
+			<div class="wrapper">
+				<div class="pad">
+					<ul class="list2">
+						<li><a href="#">Исследование 1</a></li>
+						<li><a href="#">Исследование 2</a></li>
+						<li><a href="#">Исследование 3</a></li>
+						<li><a href="#">Исследование 4</a></li>
+						<li><a href="#">Исследование 5</a></li>
+						<li><a href="#">Исследование 6</a></li>
+						<li><a href="#">Исследование 7</a></li>
+						<li><a href="#">Исследование 8</a></li>
+					</ul>
+				</div>
+			</div>
+		</article>
+		<article class="col4">
+			<h4><span><span class="right"></span>Комплексная наука</span></h4>
+			<div class="wrapper">
+				<div class="pad">
+					<p class="pad_bot3">
 						Когда синтез показаний смежных наук захватывает их во множестве, то ему достается именование комплексности.
-						</p>
-						<p class="pad_bot3">
+					</p>
+					<p class="pad_bot3">
 						 В этом случае инициативной науки, стремящейся к обогащению нет, дополнительную науку дает объединение разобщенных, но связанных друг с другом сведений.
 						 Так случилось с «конфликтологией», «науковедением», «диаспорологией». В том же ряду «биология», «экология».
-						</p>
-						<p>
-							За подробностями <a href="http://sci-article.ru/stat.php?i=1423219908">сюда</a>.
-						</p>
-					</div>
+					</p>
+					<p>
+						За подробностями <a href="http://sci-article.ru/stat.php?i=1423219908">сюда</a>.
+					</p>
 				</div>
-			</article>
-		</section>
+			</div>
+		</article>
+	</section>
 {% endblock content %}
-<!-- / content -->
-<!-- footer -->
-
-<!-- / footer -->
-	</div>
-</div>
-</body>
-</html>

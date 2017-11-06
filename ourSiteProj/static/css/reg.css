@@ -1,0 +1,56 @@
+form {
+  display: block;
+  position: absolute;
+  width: 100%;
+  font: 13px Arial;
+  font-weight: normal; 
+}
+
+input:valid + span::after {
+  content: '+';
+  position: absolute;
+  left: 325px;
+  color: green;
+}
+
+input:invalid + span::after {
+  content: '-';
+  position: absolute;
+  left: 325px;
+  color: red;
+}
+
+input:valid {
+  content: '+';
+  position: absolute;
+  
+  color: green;
+}
+
+input:invalid {
+  content: '-';
+  position: absolute;
+  
+  color: red;
+}
+
+input[name="confirm_password"] + span:after {
+  content: '';
+}
+
+p {
+  
+  color: #483D8B;
+  text-decoration: none;
+  font-family: "Times New Roman";
+  font-size: 14px;
+}
+
+input {
+  position: absolute;
+  left: 150px;
+}
+
+input[name="capcha"] {
+  margin: 7px 0 0 0;
+}
