@@ -3,19 +3,20 @@
 
 <title>{% block title %}Аутентификация{% endblock %}</title>
 
-{% block css %}
-<link rel="stylesheet" type="text/css" href="{% static "css/reg.css" %}" />
-{% endblock css %}
+
 
 {% block content %}
 	<section id="content">
 		<article class="col1">
 			<h3>Войти в систему</h3>
-			<form>
-				<input type="text" id="login" name="login" placeholder="Login" pattern="^[a-zA-Z0-9_]{3,20}$" required>
-				<input type="password" id="pass" name="password" placeholder="Password" required>
-				<input type="submit" id="logIn" name="Log In">
-			</form>
+
+			  <h2>Login</h2>
+			  <form method="post">
+			    {% csrf_token %}
+			    {{ form.as_p }}
+			    <button type="submit">Login</button>
+			  </form>
+
 		</article>
 		<article class="col2">
 			<h3>Создать аккаунт</h3>

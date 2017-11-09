@@ -10,12 +10,12 @@ mark, rp, rt, ruby, summary, time {display:inline}
 .right
 {
   float:right
-}
+}z
 
 .wrapper
 {
   width:100%;
-  overflow:hidden
+  overflow:hidden;
 }
 
 body
@@ -425,7 +425,7 @@ footer nav
 
 #ContactForm .wrapper
 {
-  min-height:35px
+  min-height:100px
 }
 
 #ContactForm .login_acc

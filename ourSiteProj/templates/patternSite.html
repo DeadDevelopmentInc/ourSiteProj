@@ -1,14 +1,16 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="ru">
 <head>
 <title>{% block title %}{% endblock %}</title>
 <meta charset="utf-8">
 
-{% load static %}
+
 
 <link rel="stylesheet" href="{% static "css/reset.css" %}" type="text/css" media="all">
 <link rel="stylesheet" href= "{% static "css/layout.css" %}" type="text/css" media="all">
 <link rel="stylesheet" href="{% static "css/style.css"  %}" type="text/css" media="all">
+
 {% block css %}{% endblock %}
 
 </head>
