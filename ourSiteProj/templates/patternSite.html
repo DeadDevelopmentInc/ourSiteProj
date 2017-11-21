@@ -19,6 +19,17 @@
 	<div class="body2">
 		<div class="main">
 <!-- header -->
+<div>
+	<section>
+		<ul>
+			{% if username %}
+				<li><a>Naxyi ({{username}})</a></li>
+			{% else %}
+				<li><a>In</a></li>
+			{% endif %}
+		</ul>
+	</section>
+</div>
 <div class="wrapper">
   <button onclick="location.href='register.html'"> Аутентификация </button>
 	<h1>{% block register %}  {% endblock register %}</h1>
