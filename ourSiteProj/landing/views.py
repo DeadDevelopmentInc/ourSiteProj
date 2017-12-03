@@ -15,20 +15,16 @@ def index(request):
 
 def contacts(request):
 
-	return render(request, 'contacts.html', locals())
+	return render(request, 'contacts.html', {'username': auth.get_user(request).username})
 
 def press(request):
 
-	return render(request, 'press.html', locals())
+	return render(request, 'press.html', {'username': auth.get_user(request).username})
 
 def researches(request):
 
-	return render(request, 'researches.html', locals())
+	return render(request, 'researches.html', {'username': auth.get_user(request).username})
 
 def services(request):
 
-	return render(request, 'services.html', locals())
-
-def register(request):
-
-    return render(request, 'register.html', locals())
+	return render(request, 'services.html', {'username': auth.get_user(request).username})

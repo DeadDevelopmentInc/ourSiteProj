@@ -13,7 +13,7 @@
 
     <link rel="icon" href="{% static 'favicon.ico' %}">
 
-    <title>Simple Django Login and Registration</title>
+    <title>Login and Registration</title>
 
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
@@ -23,7 +23,7 @@
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark static-top">
 
-    <a class="navbar-brand" href="/">Demo</a>
+    <a class="navbar-brand" href="/">auth</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
                     <a class="nav-link" href="{% url 'login' %}">Log in</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'register' %}">Create an account</a>
+                    <a class="nav-link" href="{% url 'index' %}">Create an account</a>
                 </li>
             {% endif %}
         </ul>

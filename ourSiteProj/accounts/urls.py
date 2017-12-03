@@ -2,8 +2,7 @@ from django.conf.urls import url
 from django.contrib import admin
 
 from django.contrib.auth import views as auth
-
-import main.views
+import users.views
 import accounts.views
 
 urlpatterns = [
@@ -11,7 +10,7 @@ urlpatterns = [
     url(r'^accounts/login/$', auth.LoginView.as_view(template_name='accounts/login.html'), name='login'),
     url(r'^accounts/logout/$', auth.LogoutView.as_view(template_name='accounts/logout.html'), name='logout'),
 
-    url(r'^accounts/register/$', accounts.views.register, name='register'),
+    url(r'^accounts/register/$', users.views.register, name='register'),    
 
     url(r'^accounts/password/change/$', auth.PasswordChangeView.as_view(
         template_name='accounts/password_change_form.html'), name='password_change'),
