@@ -7,101 +7,110 @@
 
 {% block header %}
 	<div class="wrapper">
-		<div class="col">
-			<h2>Лаборатория IT технологий<span>Профессиональные исследования</span></h2>
-				<p class="pad_bot1"><strong>Научная лаборатория Сани и Димаса,</strong> основные направления лаборатории: развитие систем машинного зрения, если вы не знакомы с этой темой, то вот вам несколько ознакомительных статей:</p>
-				<ul class="list1 pad_bot2">
-					<li><a href="#">Человек - строитель человеческого счастья</a></li>
-					<li><a href="#">Очередная умная фраза</a></li>
-					<li><a href="#">Для описания проекта</a></li>
-				</ul>
-				<a href="#" class="button"><span>Перейти на страницу Wiki</span></a>
-			</div>
+	<img src={% static "images/ng3.gif" %}>
+	<div class="col">
+					<h2>Лаборатория IT технологий<span><br>Профессиональные исследования</span></h2>
+					<p><strong><font color="#90EE90">Научная лаборатория Сани и Димаса,</strong> основные направления лаборатории: развитие систем машинного зрения, если вы не знакомы с этой темой, то вот вам несколько ознакомительных статей:</font></p>
+					<ul class="list1 pad_bot2">
+						<li><a href="#"><font color="#90EE90">Человек - строитель человеческого счастья</font></a></li>
+						<li><a href="#"><font color="#90EE90">Очередная умная фраза</font></a></li>
+						<li><a href="#"><font color="#90EE90">Для описания проекта</font></a></li>
+					</ul>
+				</div>
 		</div>
 {% endblock %}
 
 {% block content %}
-	<section id="content">
-		<article class="col1">
-			<h3>Последние новости</h3>
-			<div class="wrapper">
-				<figure class="left marg_right1"><a href="#"><img src="{% static "images/page1_img1.jpg"  %}"  alt=""></a></figure>
-				<p><strong>Искусственный интеллект </strong><br>проверили на IQ. &nbsp; <a href="#">Узнать больше</a></p>
-			</div>
-			<div class="wrapper">
-				<figure class="left marg_right1"><a href="#"><img src= "{% static "images/page1_img2.jpg"  %}" alt=""></a></figure>
-				<p><strong>Skype</strong> обрел искусственный интеллект. &nbsp; <a href="#">Узнать больше</a></p>
-			</div>
-			<div class="wrapper">
-				<figure class="left marg_right1"><a href="#"><img src= "{% static "images/page1_img3.jpg"  %}" alt=""></a></figure>
-					<p><strong>Искусственный интеллект</strong> научили отслеживать эмоции зрителей в кинотеатрах. &nbsp; <a href="#">Узнать больше</a></p>
-			</div>
-		</article>
-			<article class="col2">
-				<h3>Добро пожаловать в научную лабораторию!</h3>
-				<p class="pad_bot2">
-					Наша научная лаборатория, одна из не самых ведущих лабораторий <a href="http://geology.com/world/world-map.shtml" target="_blank">мира</a>.
-					Мы следим (нет) за всеми новостями из мира машинного зрения.
-				</p>
-				<div class="wrapper pad_bot1">
-					<figure class="left marg_right1"><img src="{% static "images/1.jpg"  %}" alt="" style="width: 250px"></figure>
-				</div>
-			</article>
-		</section>
-	</div>
+<script type="text/javascript" language="JavaScript" src={% static "js/snow.js" %}></script>
+<section id="content">
+	<article class="col1">
+		<h3>Последние новости</h3>
+		<div class="wrapper">
+			<figure class="left marg_right1"><a href="#"><img src={% static "images/4.png" %} alt=""></a></figure>
+			<p>
+				<strong>Искусственный интеллект </strong><br>проверили на IQ. &nbsp;<br><a href="https://www.kommersant.ru/doc/3435433">Узнать больше</a>
+			</p>
+		</div>
+		<div class="wrapper">
+			<figure class="left marg_right1"><a href="#"><img src={% static "images/2.png" %} alt=""></a></figure>
+			<p>
+				<strong>Skype</strong> обрел искусственный интеллект. &nbsp;<a href="http://internetua.com/Skype-obrel-iskusstvennii-intellekt">Узнать больше</a>
+			</p>
+		</div><br>
+		<div class="wrapper">
+			<figure class="left marg_right1"><a href="#"><img src={% static "images/5.png" %} alt=""></a></figure>
+			<p>
+				<strong>Искусственный интеллект</strong> выиграл в покер 1,8 млн долларов &nbsp; <a href="https://ria.ru/science/20171218/1511159099.html">Узнать больше</a>
+			</p>
+		</div>
+	</article>
+	<article class="col2">
+		<h3>Добро пожаловать в научную лабораторию!</h3>
+		<p class="pad_bot2">
+			Наша научная лаборатория, одна из не самых ведущих лабораторий <a href="http://geology.com/world/world-map.shtml" target="_blank">мира</a>.
+			Мы следим (нет) за всеми новостями из мира машинного зрения.
+		</p>
+		<div class="wrapper pad_bot1">
+			<figure class="left marg_right1"><img src={% static "images/1.jpg" %} alt="" style="width: 250px"></figure>
+		</div>
+	</article>
+</section>
+</div>
 </div>
 </div>
 <div class="body3">
 <div class="main">
-	<section id="content2">
-		<article class="col3">
-			<h4><span><span class="right"></span>Лаб-ное оборудование</span></h4>
-			<div class="wrapper">
-				<div class="pad">
-					<p class="pad_bot3"><strong>Оборудование нашей лаборатории представлено не самыми ровными руками и не самыми извилистыми мозгами.</strong></p>
-					<p class="pad_bot3">
-					Приносим извинения за все причененные неудобства и неприятности из-за нас.
-					Увы но это уже ваши проблеммы.
-					</p>
-					<p>
-					Даже без различного оборудования понятно, что вы ошиблись сайтом.
-					</p>
-				</div>
-			</div>
-		</article>
-		<article class="col4">
-			<h4><span><span class="right"></span>Наши исследования</span></h4>
-			<div class="wrapper">
-				<div class="pad">
-					<ul class="list2">
-							<li><a href="#">Исследование 1</a></li>
-						<li><a href="#">Исследование 2</a></li>
-						<li><a href="#">Исследование 3</a></li>
-						<li><a href="#">Исследование 4</a></li>
-						<li><a href="#">Исследование 5</a></li>
-						<li><a href="#">Исследование 6</a></li>
-						<li><a href="#">Исследование 7</a></li>
-						<li><a href="#">Исследование 8</a></li>
-					</ul>
-				</div>
-			</div>
-		</article>
-		<article class="col4">
-			<h4><span><span class="right"></span>Комплексная наука</span></h4>
-			<div class="wrapper">
-				<div class="pad">
-					<p class="pad_bot3">
-					Когда синтез показаний смежных наук захватывает их во множестве, то ему достается именование комплексности.
-					</p>
-					<p class="pad_bot3">
-					 В этом случае инициативной науки, стремящейся к обогащению нет, дополнительную науку дает объединение разобщенных, но связанных друг с другом сведений.
-					 Так случилось с «конфликтологией», «науковедением», «диаспорологией». В том же ряду «биология», «экология».
-					</p>
-					<p>
-						За подробностями <a href="http://sci-article.ru/stat.php?i=1423219908">сюда</a>.
-					</p>
-				</div>
-			</div>
-		</article>
-	</section>
+<section id="content2">
+<article class="col3">
+	<h4><span><span class="right"></span>Лаб-ное оборудование</span></h4>
+	<div class="wrapper">
+		<div class="pad">
+			<p class="pad_bot3">
+				<strong>Оборудование нашей лаборатории представлено не самыми ровными руками и не самыми извилистыми мозгами.</strong>
+			</p>
+			<p class="pad_bot3">
+			Приносим извинения за все причененные неудобства и неприятности из-за нас.
+			Увы но это уже ваши проблеммы.
+			</p>
+			<p>
+			Даже без различного оборудования понятно, что вы ошиблись сайтом.
+			</p>
+		</div>
+	</div>
+</article>
+<article class="col4">
+	<h4><span><span class="right"></span>Наши исследования</span></h4>
+	<div class="wrapper">
+		<div class="pad">
+			<ul class="list2">
+				<li><a href="#">Исследование 1</a></li>
+				<li><a href="#">Исследование 2</a></li>
+				<li><a href="#">Исследование 3</a></li>
+				<li><a href="#">Исследование 4</a></li>
+				<li><a href="#">Исследование 5</a></li>
+				<li><a href="#">Исследование 6</a></li>
+				<li><a href="#">Исследование 7</a></li>
+				<li><a href="#">Исследование 8</a></li>
+			</ul>
+		</div>
+	</div>
+</article>
+<article class="col4">
+	<h4><span><span class="right"></span>Комплексная наука</span></h4>
+	<div class="wrapper">
+		<div class="pad">
+			<p class="pad_bot3">
+			Когда синтез показаний смежных наук захватывает их во множестве, то ему достается именование комплексности.
+			</p>
+			<p class="pad_bot3">
+			 В этом случае инициативной науки, стремящейся к обогащению нет, дополнительную науку дает объединение разобщенных, но связанных друг с другом сведений.
+			 Так случилось с «конфликтологией», «науковедением», «диаспорологией». В том же ряду «биология», «экология».
+			</p>
+			<p>
+				За подробностями <a href="http://sci-article.ru/stat.php?i=1423219908">сюда</a>.
+			</p>
+		</div>
+	</div>
+</article>
+</section>
 {% endblock content %}

@@ -5,6 +5,7 @@
 <title>{% block title %}{% endblock %}</title>
 <meta charset="utf-8">
 
+<link rel="icon" href="{% static 'favicon.ico' %}">
 
 
 <link rel="stylesheet" href="{% static "css/reset.css" %}" type="text/css" media="all">
@@ -15,6 +16,7 @@
 
 </head>
 <body id="page1">
+
 <div class="body1">
 	<div class="body2">
 		<div class="main">
@@ -58,6 +60,7 @@
 </div>
 {% block header %}
 <div class="wrapper">
+<img src={% static "images/ng3.gif" %}>
   <div class="col">
     <h2>Лаборатория IT технологий<span>Профессиональные исследования</span></h2>
     <p><strong>Научная лаборатория Сани и Димаса,</strong> направленная на развитие систем машинного зрения, если вы уже пересекались с нами просим прощения.</p><a href="#" class="button"><span>Узнать больше</span></a>

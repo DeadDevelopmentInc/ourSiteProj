@@ -5,6 +5,7 @@
 
 
 {% block content %}
+<script type="text/javascript" language="JavaScript" src={% static "js/snow.js" %}></script>
 	<section id="content">
 		<article class="col1">
 			<h3>Обратная связь</h3>
@@ -41,8 +42,8 @@
 						<div class="textarea_box">
 							<span>Сообщение:</span><textarea name="textarea" cols="1" rows="1"></textarea>
 						</div>
-						<a href="#" class="button" onClick="document.getElementById('ContactForm').submit()">Отправить</a>
-						<a href="#" class="button" onClick="document.getElementById('ContactForm').reset()">Отчистить</a>
+						<a href="#" class="button" onClick="document.getElementById('ContactForm').submit()">Sent</a>
+						<a href="#" class="button" onClick="document.getElementById('ContactForm').reset()">Clear</a>
 					</div>
 				</form>
 			</article>

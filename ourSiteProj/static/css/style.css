@@ -23,7 +23,7 @@ body
   background:#f2f2f2;
   border:0;
   font:14px Arial, Helvetica, sans-serif;
-  color:#363636;
+  color:#ff3300;
   line-height:20px
 }
 
@@ -62,17 +62,14 @@ body
 
 .body1
 {
-  background:url(../images/bg2_top.gif) top repeat-x #fff
+  background:url(../images/home.gif) top repeat-x #fff
 }
 
-.body2
-{
-  background:url(../images/backgroundImage.jpg) top center no-repeat
-}
+
 
 .body3
 {
-  background:url(../images/bg_top2.gif) top center repeat-x
+  background:url(../images/home_foot.gif) top center repeat-x
 }
 /* main layout */
 a
@@ -98,7 +95,7 @@ h2
 {
   font-size:40px;
   line-height:1.2em;
-  color:#182125;
+  color:#00ff00;
   padding:35px 0 16px 0;
   font-weight:normal;
   letter-spacing:-1px
@@ -117,7 +114,7 @@ h2 span
 h3
 {
   font-size:30px;
-  color:#182125;
+  color:#00ff00;
   line-height:1.2em;
   padding:20px 0 18px 0;
   font-weight:normal
@@ -128,7 +125,7 @@ h4
   border:1px solid #cccccc;
   font-size:19px;
   font-weight:normal;
-  color:#182125;
+  color:#00ff00;
   line-height:40px;
   border-radius:6px;
   -moz-border-radius:6px;
@@ -142,7 +139,7 @@ h4 span
 {
   border:1px solid #fff;
   display:block;
-  background:url(../images/bg_box1.gif) top repeat-x #eee;
+  background:url(../images/FON12.jpg) top repeat-x #eee;
   padding:0 17px;
   border-radius:6px;
   -moz-border-radius:6px;
@@ -170,7 +167,7 @@ header
 #logo
 {
   display:block;
-  background:url(../images/logo.jpg) no-repeat;
+  background:url(../images/Logo1.jpg) no-repeat;
   width:227px;
   height:36px;
   text-indent:-5000px
@@ -198,7 +195,7 @@ header
   background:url(../images/search_input.gif) no-repeat;
   width:177px;
   font:14px Arial, Helvetica, sans-serif;
-  color:#363636;
+  color:#ff3300;
   height:17px;
   padding:6px
 }
@@ -206,32 +203,28 @@ header
 #menu
 {
   float:right;
-  padding:22px 27px 0 0
+  padding:200px 27px 10px 10px
 }
 
 #menu li
 {
   float:left;
-  padding-left:1px
+  padding-right:1px
 }
 
 #menu li a
 {
   display:block;
-  font-size:18px;
+  font-size:21px;
   color:#fff;
   line-height:50px;
-  padding:0 22px;
+  padding:0 33px;
   text-decoration:none;
   font-weight:normal
 }
 
-#menu li a:hover
-{
-  color:#008cdd
-  }
+#menu li a:hover {color:#008cdd}
 /* content */
-#content
 {
   width:100%;
   overflow:hidden;
@@ -282,7 +275,7 @@ header
 
 .list1 a
 {
-  color:#363636;
+  color:#ff3300;
   padding-left:13px;
   background:url(../images/marker_1.gif) 0 5px no-repeat
 }
@@ -294,7 +287,7 @@ header
 
 .list2 li a
 {
-  color:#363636;
+  color:#ff3300;
   padding-left:26px;
   background:url(../images/marker_2.gif) 2px 1px no-repeat
 }
@@ -304,7 +297,7 @@ header
   display:inline-block;
   text-decoration:none;
   font-size:30px;
-  color:#182125;
+  color:#00ff00;
   border:1px solid #c6cacc;
   line-height:40px;
   border-radius:6px;
@@ -316,7 +309,7 @@ header
 
 .button span
 {
-  background:url(../images/button1_bg.gif) top repeat-x #eee;
+  background:url(../images/FON12.jpg) top repeat-x #eee;
   border:1px solid #fff;padding:0 20px;
   display:block;
   border-radius:6px;
@@ -353,7 +346,7 @@ footer .pad
 
 footer nav
 {
-  background:url(../images/bg_box2.jpg) top center no-repeat;
+  background:url(../images/FON12.jpg) top center no-repeat;
   border-radius:7px;
   -moz-border-radius:6px;
   -webkit-border-radius:6px;
@@ -408,7 +401,7 @@ footer nav
   line-height:29px;
   width:81px;
   text-align:center;
-  background:url(../images/button2_bg.gif) top repeat-x #000
+  background:url(../images/FON12.jpg) top repeat-x #000
 }
 
 #ContactForm .button:hover
@@ -453,7 +446,7 @@ footer nav
   width:311px;
   height:17px;
   padding:6px;
-  color:#182125;
+  color:#00ff00;
   font:14px Arial, Helvetica, sans-serif
 }
 
@@ -461,11 +454,11 @@ footer nav
 {
   overflow:auto;
   float:left;
-  background:url(../images/textarea.gif) no-repeat;
+    background:url(../images/textarea.gif) no-repeat;
   width:416px;
   height:202px;
   padding:6px;
-  color:#182125;
+  color:#00ff00;
   font:14px Arial, Helvetica, sans-serif;
   margin:0
 }
